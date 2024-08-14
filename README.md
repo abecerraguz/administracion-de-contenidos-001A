@@ -37,3 +37,15 @@ Programando un sitio web para un CMS
 |--------|-----------|----------|----------|----------|----------|
 | 9    | Sumativa | Individual | 👉 40% | Miércoles 25 de septiembre | Domingo 06 de octubre |
 
+# SEMANA 1
+Creación de Blog en [https://wordpress.com/](https://wordpress.com/)
+
+# SEMANA 2
+Instalación de wordpress.org. Creación de Plantilla o Themes, reconocer los distintos archivos de un tema de inicio en wordpress.org.
+
+1. [Instalar wordpress.org](https://wordpress.org/download/)
+2. [Usar Wireframe demo para hacer la plantilla](https://xd.adobe.com/view/f3b0e129-aaf4-4051-9f87-97967e6ee65e-a6e3/)
+3. [Video 1 complementario semana 02 Instalación de wordpress y creación de plantilla de inicio](https://drive.google.com/file/d/1HSts9jPNOUAaANSzLY2sJNWfnC4Ip0zg/view?usp=sharing)
+4. [Video 2 complementario semana 02 Instalación de wordpress y creación de plantilla de inicio](https://drive.google.com/file/d/16MRiDUodpF8vQMqN8SCFfKchDJjJ5nBC/view?usp=sharing)
+5. [Archivos de themes de inicio](https://drive.google.com/file/d/1_0xE-rkbdikfFcHnPQz_2EuXS4q5Wjvc/view?usp=sharing)
+
