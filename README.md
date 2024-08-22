@@ -49,3 +49,7 @@ Instalación de wordpress.org. Creación de Plantilla o Themes, reconocer los di
 4. [Video 2 complementario semana 02 Instalación de wordpress y creación de plantilla de inicio](https://drive.google.com/file/d/16MRiDUodpF8vQMqN8SCFfKchDJjJ5nBC/view?usp=sharing)
 5. [Archivos de themes de inicio](https://drive.google.com/file/d/1_0xE-rkbdikfFcHnPQz_2EuXS4q5Wjvc/view?usp=sharing)
 
+# SEMANA 3
+Actualización y mejoras del my_theme, los archivos los pueden descargar desdel el siguiente link:
+1. [Archivos de themes de inicio versión actualizada](https://drive.google.com/file/d/1vMfiOdaYsiyODbpnWWTobkjb9cutXOlK/view?usp=sharing)
+
