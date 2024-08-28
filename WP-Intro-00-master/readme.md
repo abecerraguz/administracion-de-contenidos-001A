@@ -607,14 +607,21 @@ function codex_book_init() {
 
 	<?php wp_page_menu(
 		array(
+
+			'theme_location'  => 'primary', 
+
 			// 0 (predeterminado) Muestra las páginas a cualquier profundidad y las organiza jerárquicamente en listas anidadas
 			'depth' => 0,
+
 			// Ordena páginas por orden de páginas.
 			'sort_column' => 'menu_order, post_title',
+
 			//( cadena ) La clase div en la que se muestra la lista. Por defecto está en el menú .
 			'menu_class' => 'menu',
+
 			// Incluye los id ejemplo 3,7,31
 			'include' => ' ',
+
 			// Excluye los id ejemplo 3,7,31
 			'exclude' => ' ',
 
@@ -622,6 +629,7 @@ function codex_book_init() {
 			// una cadena de texto HTML para usar en PHP. El valor predeterminado es 1 (Mostrar los elementos de la lista
 			// generados). Valores válidos:
 			'echo' => true,
+			
 			// ( booleano ) Agregue "Inicio" como primer elemento en la lista de "Páginas".
 			'show_home' => true,
 			'link_before' => '',
