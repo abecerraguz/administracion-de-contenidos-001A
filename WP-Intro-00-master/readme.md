@@ -269,10 +269,58 @@ $x--	Post-decrementa
 	|– footer.php--Contiene la información del footer de mis páginas.
 
 ~~~
+### ENCOLAMIENTO DE ARCHIVOS CSS Y JS MINIMO VIABLE
+
+#### function.php
+
+```php
+
+	function my_theme_scripts() {
+		// Encolar Bootstrap CSS
+		wp_enqueue_style('bootstrap-css', get_template_directory_uri() . '/assets/librerias/css/bootstrap.min.css');
+
+		// Encolar el archivo CSS personalizado
+		wp_enqueue_style('main-styles', get_template_directory_uri() . '/assets/librerias/css/main.css');
+
+		// Encolar Bootstrap JS (bundle incluye Popper.js)
+		wp_enqueue_script('bootstrap-js', get_template_directory_uri() . '/assets/librerias/js/bootstrap.bundle.min.js', array('jquery'), null, true);
+
+		// Encolar el archivo JavaScript personalizado
+		wp_enqueue_script('main-scripts', get_template_directory_uri() . '/assets/librerias/js/main.js', array('jquery'), null, true);
+	}
+
+	add_action('wp_enqueue_scripts', 'my_theme_scripts');
+
+
+```
+
+### META INFORMACION DEL TEMA
+
+#### style.css
+
+```css
+
+	/*
+
+		Theme Name: My Theme v-1
+		Theme URI: http://localhost/wp_inicio
+		Author: Alejandro Becerra
+		Author URI: http://example.com
+		Description: Un tema WordPress básico de inicio.
+		Version: 1.0
+		License: GNU General Public License v2 or later
+		License URI: http://www.gnu.org/licenses/gpl-2.0.html
+		Text Domain: my-theme
+		Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+	*/
+
+```
 
 ### COMETARIOS PLANTILLAS
 
 #### page-nosotros.php
+
 ```php
 
 	<?php 
@@ -285,6 +333,7 @@ $x--	Post-decrementa
 ```
 
 #### single-servicios.php
+
 ```php
 
 	<?php 
