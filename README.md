@@ -54,4 +54,5 @@ Actualización y mejoras del my_theme, los archivos los pueden descargar desdel 
 1. [Archivos de themes de inicio versión actualizada](https://drive.google.com/file/d/1vMfiOdaYsiyODbpnWWTobkjb9cutXOlK/view?usp=sharing)
 
 # SEMANA 4
-Material complementario Intro a PHP, taxonomía y funciones más usadas en wordpress.
+Material complementario Intro a PHP, taxonomía y funciones más usadas en wordpress dejo URL:
+[https://github.com/abecerraguz/administracion-de-contenidos-001A/tree/main/WP-Intro-00-master](https://github.com/abecerraguz/administracion-de-contenidos-001A/tree/main/WP-Intro-00-master)
