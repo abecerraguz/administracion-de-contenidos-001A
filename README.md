@@ -53,3 +53,5 @@ Instalación de wordpress.org. Creación de Plantilla o Themes, reconocer los di
 Actualización y mejoras del my_theme, los archivos los pueden descargar desdel el siguiente link:
 1. [Archivos de themes de inicio versión actualizada](https://drive.google.com/file/d/1vMfiOdaYsiyODbpnWWTobkjb9cutXOlK/view?usp=sharing)
 
+# SEMANA 4
+Material complementario Intro a PHP, taxonomía y funciones más usadas en wordpress.
