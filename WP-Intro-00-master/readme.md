@@ -602,44 +602,87 @@ function codex_book_init() {
 }
 ~~~
 
-## RECUPERAR LOS PAGE EN EL MENU DE NAVEGACION
+# DIFERENCIA ENTRE WP_PAGE_MENU Y WP_NAV_MENU
+En WordPress, tanto wp_nav_menu() como wp_page_menu() son funciones que se utilizan para mostrar menús de navegación en un tema, pero tienen diferencias significativas en cuanto a su uso y funcionalidad:
+
+1. wp_nav_menu():
+Funcionalidad: Se utiliza para mostrar un menú de navegación personalizado. Este menú se gestiona desde el área de administración de WordPress, específicamente en "Apariencia" > "Menús".
+Flexibilidad: Es muy flexible, ya que permite crear menús personalizados que pueden incluir enlaces a páginas, categorías, enlaces personalizados, y más.
+
+Soporte para temas: Muchos temas de WordPress están diseñados para utilizar wp_nav_menu(), y suelen tener ubicaciones de menú específicas que pueden ser gestionadas a través del personalizador de WordPress.
+Opciones de personalización: Permite utilizar una serie de parámetros para personalizar la salida del menú, como contenedores, clases CSS, y estructuras de lista. Además, es compatible con los walker classes, lo que permite personalizar cómo se renderiza el HTML del menú.
+
+2. wp_page_menu():
+Funcionalidad: Se utiliza para mostrar un menú basado en las páginas publicadas en el sitio. Este menú se genera automáticamente, sin necesidad de crear uno manualmente en el área de administración.
+Automático: Es útil cuando no hay un menú personalizado creado en WordPress. En ausencia de un menú personalizado, wp_page_menu() lista automáticamente todas las páginas en el sitio.
+
+Uso limitado: Está más limitado en términos de personalización en comparación con wp_nav_menu(). Generalmente, muestra una lista simple de páginas con opciones básicas de personalización como incluir un enlace al inicio (home) o definir clases CSS.
+Backwards Compatibility: En temas más antiguos, esta función era comúnmente utilizada antes de la introducción de menús personalizados en WordPress 3.0.
+
+### En resumen:
+wp_nav_menu() es la opción preferida cuando se quiere un control total sobre la estructura y contenido del menú de navegación, utilizando la interfaz de administración de menús de WordPress.
+
+wp_page_menu() es una solución más simple y automática que se basa en las páginas publicadas, útil cuando no se necesita un menú personalizado.
+
+Si estás creando un tema o personalizando uno existente y quieres ofrecer la máxima flexibilidad a los usuarios, wp_nav_menu() es generalmente la mejor opción.
+
+## RECUPERAR LOS WP_PAGE_MENU EN EL MENU DE NAVEGACION
 ```PHP
 
 	<?php wp_page_menu(
 		array(
-
-			'theme_location'  => 'primary', 
-
-			// 0 (predeterminado) Muestra las páginas a cualquier profundidad y las organiza jerárquicamente en listas anidadas
-			'depth' => 0,
-
-			// Ordena páginas por orden de páginas.
-			'sort_column' => 'menu_order, post_title',
-
-			//( cadena ) La clase div en la que se muestra la lista. Por defecto está en el menú .
-			'menu_class' => 'menu',
-
-			// Incluye los id ejemplo 3,7,31
-			'include' => ' ',
-
-			// Excluye los id ejemplo 3,7,31
-			'exclude' => ' ',
-
-			//( booleano ) Alterna la visualización de la lista generada de enlaces o devuelve la lista como
-			// una cadena de texto HTML para usar en PHP. El valor predeterminado es 1 (Mostrar los elementos de la lista
-			// generados). Valores válidos:
-			'echo' => true,
-			
-			// ( booleano ) Agregue "Inicio" como primer elemento en la lista de "Páginas".
-			'show_home' => true,
-			'link_before' => '',
-			'link_after' => ''
+			// Mostrar un enlace a la página de inicio. Puede ser 'true', 'false' o un texto personalizado.
+			'show_home'   => true,  
+			// Clase CSS a aplicar al contenedor del menú. 
+			'menu_class'  => 'menu', 
+			// IDs de las páginas a incluir en el menú, separados por comas.
+			'include'     => '',  
+			// IDs de las páginas a excluir del menú, separados por comas.   
+			'exclude'     => '',    
+			// Si se establece en 'true', se imprime el menú; si es 'false', se devuelve como una cadena. 
+			'echo'        => true,
+			// Texto para poner antes de cada enlace.
+			'link_before' => '',  
+			// Texto para poner después de cada enlace.   
+			'link_after'  => '', 
+			 // Niveles de anidación de páginas a mostrar. 0 significa sin límite.    
+			'depth'       => 0,     
+			// Columna o columnas por las que se ordenarán las páginas. Ejemplo: 'menu_order' o 'post_title'.
+			'sort_column' => 'menu_order, post_title', 
+			// Clase Walker personalizada para el menú.
+			'walker'      => ''      
 		)
 	)
 	;?>
 
 ```
 
+## RECUPERAR LOS WP_NAV_MENU EN EL MENU DE NAVEGACION
+```php
+	<?php
+
+		wp_nav_menu( array(
+			'theme_location' => 'primary',   // Ubicación del menú registrado en functions.php
+			'menu'           => '',          // Nombre, slug o ID del menú a mostrar. Si está vacío, se utilizará la ubicación.
+			'container'      => 'div',       // Etiqueta HTML que contendrá el menú. Puede ser 'div', 'nav', 'false', etc.
+			'container_class'=> 'menu-container', // Clase CSS del contenedor.
+			'container_id'   => '',          // ID del contenedor.
+			'menu_class'     => 'menu',      // Clase CSS para las <ul> del menú.
+			'menu_id'        => '',          // ID para las <ul> del menú.
+			'echo'           => true,        // Si es 'true', se imprime el menú. Si es 'false', se devuelve como una cadena.
+			'fallback_cb'    => 'wp_page_menu', // Callback a ejecutar si no existe un menú.
+			'before'         => '',          // Texto a añadir antes de cada enlace del menú.
+			'after'          => '',          // Texto a añadir después de cada enlace del menú.
+			'link_before'    => '',          // Texto a añadir antes del texto de cada enlace.
+			'link_after'     => '',          // Texto a añadir después del texto de cada enlace.
+			'items_wrap'     => '<ul id="%1$s" class="%2$s">%3$s</ul>', // Estructura HTML para envolver los elementos del menú.
+			'depth'          => 0,           // Controla cuántos niveles de anidación se mostrarán. 0 significa sin límite.
+			'walker'         => '',          // Clase Walker personalizada para tener control total sobre la salida del HTML.
+		) );
+		?>
+
+
+```
 ## MODO DEBUG PARA PODER IDENTIFICAR ERRORES
 ### URL DE REFERENCIA
 [https://wordpress.org/support/article/debugging-in-wordpress/](https://wordpress.org/support/article/debugging-in-wordpress/)
