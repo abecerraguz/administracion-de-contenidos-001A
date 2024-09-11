@@ -463,7 +463,8 @@ $x--	Post-decrementa
 		);
 
 		$the_queryXXXX = new WP_Query($argsXXXX);
-			while($the_queryXXXX->have_posts()) : $the_queryXXXX->the_post();
+			while($the_queryXXXX->have_posts()) 
+			$the_queryXXXX->the_post();
 				$category = get_the_category();
 				if(in_category('xxxx')){
 
@@ -474,7 +475,6 @@ $x--	Post-decrementa
 					echo get_the_date('j F, Y');
 
 				}
-			endwhile;
 			wp_reset_postdata();
 	?>
 
@@ -494,8 +494,9 @@ $x--	Post-decrementa
 		'paged'         => $paged
 	);
 	$mi_consulta = new WP_Query($arg);
-	if ($mi_consulta->have_posts()):$mi_consulta->the_post(); {
+	if ($mi_consulta->have_posts()) {
 		while ($mi_consulta->have_posts()) {
+			$mi_consulta->the_post();
 			// Recupera el título de la publicación
 			echo get_the_title().'<br>';
 			// Recupera el nombre de la categoría
@@ -515,7 +516,6 @@ $x--	Post-decrementa
 			// Recupera el permalink
 			echo get_the_permalink().'<br>';
 		}
-	endwhile;
 	echo the_pagination( $mi_consulta );
 	}else{
 		echo _e('Lo sentimos no existe Publicaciones');
