@@ -40,6 +40,16 @@ Programando un sitio web para un CMS
 # SEMANA 1
 Creación de Blog en [https://wordpress.com/](https://wordpress.com/)
 
+- Inicio
+- Acerca de
+- Servicios
+  - Desarrollo Web
+  - Diseño Gráfico
+  - SEO
+- Blog
+- Contacto
+
+
 # SEMANA 2
 Instalación de wordpress.org. Creación de Plantilla o Themes, reconocer los distintos archivos de un tema de inicio en wordpress.org.
 
