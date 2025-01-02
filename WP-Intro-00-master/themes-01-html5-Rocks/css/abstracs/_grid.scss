@@ -1,0 +1,135 @@
+.container{
+
+    @include breakpoint(xs){
+        width: 100%;
+        max-width:$max-width-100;
+        margin:0 auto;
+        padding: 0 0.5rem;
+    }
+    @include breakpoint(md){
+        width: 100%;
+        max-width:$max-width-70;
+        margin:0 auto;
+        padding: 0 0.5rem;
+    }
+}
+
+.row{
+
+    @include breakpoint(xs){
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem 0;
+    }
+    @include breakpoint(md){
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        margin: 1rem 0;
+    }
+}
+
+/*
+    de PX a REM
+    1rem ----> 16px
+    X          5px
+*/
+
+.col-1{
+    width: $width-col * 1;
+    height: auto;
+    overflow: hidden;
+    padding: 0rem 0.5rem;
+}
+
+.col-2{
+    width: $width-col * 2;
+    height: auto;
+    overflow: hidden;
+    padding: 0rem 0.5rem;
+}
+
+.col-3{
+    width: $width-col * 3;
+    height: auto;
+    overflow: hidden;
+    padding: 0rem 0.5rem;
+}
+
+.col-4{
+
+    @include breakpoint(xs){
+        width: $width-col * 12;
+    }
+
+    @include breakpoint(md){
+        width: $width-col * 4;
+        height: auto;
+        overflow: hidden;
+        padding: 0rem 0.5rem;
+    }
+
+}
+
+.col-5{
+    width: $width-col * 5;
+    height: auto;
+    overflow: hidden;
+    padding: 0rem 0.5rem;
+}
+
+.col-6{
+    width: $width-col * 6;
+    height: auto;
+    overflow: hidden;
+    padding: 0rem 0.5rem;
+}
+
+.col-7{
+    width: $width-col * 7;
+    height: auto;
+    overflow: hidden;
+    padding: 0rem 0.5rem;
+}
+
+.col-8{
+    width: $width-col * 8;
+    height: auto;
+    overflow: hidden;
+    padding: 0rem 0.5rem;
+}
+
+.col-9{
+    width: $width-col * 9;
+    height: auto;
+    overflow: hidden;
+    padding: 0rem 0.5rem;
+}
+
+.col-10{
+    width: $width-col * 10;
+    height: auto;
+    overflow: hidden;
+    padding: 0rem 0.5rem;
+}
+
+.col-11{
+    width: $width-col * 11;
+    height: auto;
+    overflow: hidden;
+    padding: 0rem 0.5rem;
+}
+
+.col-12{
+    width: $width-col * 12;
+    height: auto;
+    overflow: hidden;
+    padding: 0rem 0.5rem;
+}
+
+
+
+

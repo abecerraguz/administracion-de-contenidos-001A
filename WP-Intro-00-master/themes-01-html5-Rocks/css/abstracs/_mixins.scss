@@ -1,0 +1,42 @@
+/*
+
+  breakponit(xs){
+    si xs es igual a xs 
+        => Ejecuta el media query 
+
+ }
+*/
+
+@mixin breakpoint( $media ) {
+
+  @if $media == xxs {
+
+    @media only screen and (max-width: $screen-xs-min) { @content; }
+  
+  }
+
+   
+    @if $media == xs {
+
+      @media only screen and (min-width: $screen-xs-min) { @content; }
+    
+    }
+
+
+    @else if $media == sm {
+      @media only screen and (min-width: $screen-sm-min) { @content; }
+    }
+
+    @else if $media == md {
+      @media only screen and (min-width: $screen-md-min) { @content; }
+    }
+
+    @else if $media == lg {
+      @media only screen and (min-width: $screen-lg-min) { @content; }
+    }
+
+}
+
+@mixin vertical-gradient( $start-color, $end-color ) {
+    background: linear-gradient(to top, $start-color, $end-color);
+}
