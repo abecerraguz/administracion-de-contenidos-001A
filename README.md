@@ -55,7 +55,7 @@ Instalación de wordpress.org. Creación de Plantilla o Themes, reconocer los di
 
 1. [Instalar wordpress.org](https://wordpress.org/download/)
 2. [Usar Wireframe demo para hacer la plantilla](https://xd.adobe.com/view/f3b0e129-aaf4-4051-9f87-97967e6ee65e-a6e3/)
-3. [Plantilla HTML5](https://github.com/abecerraguz/administracion-de-contenidos-001A/tree/main/WP-Intro-00-master/themes-01-html5-Rocks)
+3. [Plantilla HTML5 para demostración de clases sincrónicas no para uso del alumno de su proyecto personal](https://github.com/abecerraguz/administracion-de-contenidos-001A/tree/main/WP-Intro-00-master/themes-01-html5-Rocks)
 3. [Video 1 complementario semana 02 Instalación de wordpress y creación de plantilla de inicio](https://drive.google.com/file/d/1HSts9jPNOUAaANSzLY2sJNWfnC4Ip0zg/view?usp=sharing)
 4. [Video 2 complementario semana 02 Instalación de wordpress y creación de plantilla de inicio](https://drive.google.com/file/d/16MRiDUodpF8vQMqN8SCFfKchDJjJ5nBC/view?usp=sharing)
 5. [ Archivos de themes de inicio final](https://drive.google.com/file/d/1_0xE-rkbdikfFcHnPQz_2EuXS4q5Wjvc/view?usp=sharing)
