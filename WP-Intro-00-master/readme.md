@@ -275,6 +275,21 @@ $x--	Post-decrementa
 
 ```php
 
+	function my_theme_setup() {
+		// Soporte para imágenes destacadas
+		add_theme_support('post-thumbnails');
+		
+		// Soporte para título dinámico
+		add_theme_support('title-tag');
+		
+		// Registro de menú
+		register_nav_menus(array(
+			'primary' => __('Primary Menu', 'my-theme'),
+			'sidebar' => __('Sidebar Menu', 'my-theme'),
+		));
+	}
+	add_action('after_setup_theme', 'my_theme_setup');
+
 	function my_theme_scripts() {
 		// Encolar Bootstrap CSS
 		wp_enqueue_style('bootstrap-css', get_template_directory_uri() . '/assets/librerias/css/bootstrap.min.css');
@@ -290,6 +305,26 @@ $x--	Post-decrementa
 	}
 
 	add_action('wp_enqueue_scripts', 'my_theme_scripts');
+
+	
+	function formato_personalizado_fecha_latino($the_date, $d) {
+    	return date_i18n('d/m/Y', strtotime($the_date));
+	}
+
+	add_filter('get_the_date', 'formato_personalizado_fecha_latino', 10, 2);
+
+
+	function agregar_favicon() {
+		// Obtener la URL del tema
+		$favicon_url = get_template_directory_uri() . '/assets/img/icon.svg';
+
+		// Imprimir la etiqueta HTML para el favicon en la cabecera
+		echo '<link rel="shortcut icon" href="' . esc_url($favicon_url) . '" />';
+	}
+
+	// Hook para añadir el favicon en el head del tema
+	add_action('wp_head', 'agregar_favicon');
+
 
 
 ```
@@ -521,6 +556,32 @@ $x--	Post-decrementa
 		echo _e('Lo sentimos no existe Publicaciones');
 	}
 	?>
+
+```
+
+## POST_TYPE QUE TRAE LOS POST ORDENADOS DE FORMA DESC POR FECHA
+```php
+
+	<?php
+         $args = array(
+            'post_type'      => 'post',
+            'posts_per_page' => 2,  // -1 means show all posts
+            'orderby'        => 'date',
+            'order'          => 'DESC'
+        );
+        $all_posts = new WP_Query($args);
+
+        if($all_posts->have_posts()){
+            while( $all_posts->have_posts()){
+                $all_posts->the_post();
+                get_template_part('template-parts/content', 'sidebar');
+            }
+        }else{
+            echo _e('Lo sentimos no hay publicación');
+        }
+    ?>
+	
+
 
 ```
 
