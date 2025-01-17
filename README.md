@@ -62,8 +62,12 @@ Instalación de wordpress.org. Creación de Plantilla o Themes, reconocer los di
 
 # SEMANA 3
 Actualización y mejoras del my_theme, los archivos los pueden descargar desdel el siguiente link:
-1. [Archivos de themes de inicio versión actualizada](https://drive.google.com/file/d/1vMfiOdaYsiyODbpnWWTobkjb9cutXOlK/view?usp=sharing)
+1. [Archivos de themes de inicio versión actualizada my_theme_v_1](https://drive.google.com/file/d/1vMfiOdaYsiyODbpnWWTobkjb9cutXOlK/view?usp=sharing)
 
 # SEMANA 4
 Material complementario Intro a PHP, taxonomía y funciones más usadas en wordpress dejo URL:
-[https://github.com/abecerraguz/administracion-de-contenidos-001A/tree/main/WP-Intro-00-master](https://github.com/abecerraguz/administracion-de-contenidos-001A/tree/main/WP-Intro-00-master)
+1. [https://github.com/abecerraguz/administracion-de-contenidos-001A/tree/main/WP-Intro-00-master](https://github.com/abecerraguz/administracion-de-contenidos-001A/tree/main/WP-Intro-00-master)
+
+2. [Archivos de themes de inicio versión actualizada my_theme_v_2, va base de datos en carpeta SQL, acceso al admin en readme.md](https://drive.google.com/file/d/12S_v1f4EF3cJTAUtCmhVXAeZQ-jPcKyh/view?usp=sharing)
+
+
