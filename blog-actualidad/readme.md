@@ -1,6 +1,6 @@
 
 
-# Curso de Introducción a WordPress
+# Creando un tema desde cero paso a paso
 
 ![Landing Blog Actualidad](screenshot.png)
 
@@ -211,9 +211,9 @@ El objetivo es que, al finalizar, seas capaz de **instalar, personalizar y admin
 
 ```
 
-# HEADER Y FOOTER HOOK
+### HEADER Y FOOTER HOOK
 
-## URL DE REFERENCIA
+#### URL DE REFERENCIA
 `https://codex.wordpress.org/Function_Reference/wp_head`
 
 ```php
@@ -231,7 +231,7 @@ El objetivo es que, al finalizar, seas capaz de **instalar, personalizar y admin
 
 ```
 
-## URL DE REFERENCIA
+### URL DE REFERENCIA
 [https://codex.wordpress.org/Function_Reference/wp_footer](https://codex.wordpress.org/Function_Reference/wp_footer)
 
 ```php
@@ -249,7 +249,7 @@ El objetivo es que, al finalizar, seas capaz de **instalar, personalizar y admin
 
 ```
 
-## LOOP BASE DE WORDPRESS
+### LOOP BASE DE WORDPRESS
 ```php
 
 		<?php 
@@ -284,7 +284,8 @@ El objetivo es que, al finalizar, seas capaz de **instalar, personalizar y admin
 
 ```
 
-## POST_TYPE DE WORDPRESS CONDICIONADO A UNA CATEGORÍA
+### POST_TYPE DE WORDPRESS CONDICIONADO A UNA CATEGORÍA
+
 ```php
 
 	<?php 
@@ -315,7 +316,8 @@ El objetivo es que, al finalizar, seas capaz de **instalar, personalizar y admin
 
 ```
 
-## POST_TYPE DE WORDPRESS CON PAGINACION
+### POST_TYPE DE WORDPRESS CON PAGINACION
+
 ```php
 
 	<?php 
@@ -359,7 +361,8 @@ El objetivo es que, al finalizar, seas capaz de **instalar, personalizar y admin
 
 ```
 
-## POST_TYPE QUE TRAE LOS POST ORDENADOS DE FORMA DESC POR FECHA
+### POST_TYPE QUE TRAE LOS POST ORDENADOS DE FORMA DESC POR FECHA
+
 ```php
 
 	<?php
@@ -385,38 +388,116 @@ El objetivo es que, al finalizar, seas capaz de **instalar, personalizar y admin
 
 ```
 
-## LLAMADAS PARA OBTENER INFORMACIÓN GENERAL DEL SITIO
-### URL DE REFERENCIA
-[https://developer.wordpress.org/reference/functions/bloginfo/](https://developer.wordpress.org/reference/functions/bloginfo/)
+# 📑 Chuleta rápida de WordPress
 
-~~~html
+Tabla con las funciones más usadas en desarrollo de temas y plugins de WordPress.  
 
-- Título del Sitio
+---
 
-	<?php bloginfo('name');?>
+## 🔹 Información del sitio
 
-- Descripción de la página
+| Función | Descripción |
+|---------|-------------|
+| `bloginfo('name')` | Nombre del sitio |
+| `bloginfo('description')` | Descripción corta |
+| `bloginfo('url')` | URL principal |
+| `bloginfo('stylesheet_url')` | URL del style.css |
+| `bloginfo('template_url')` | URL del tema activo |
 
-	<?php bloginfo('description');?>
+---
 
-- Para recuperar la ruta hacia la hoja de estilo "style.css", de la Raíz.
+## 🔹 Estructura (plantillas)
 
-  <?php bloginfo('stylesheet_url');?> 
-  Esto devuelve la sigiente dirección: http://localhost/wp_inicio/content/themes/themes_query_01/style.css
+| Función | Descripción |
+|---------|-------------|
+| `get_header()` | Cargar `header.php` |
+| `get_footer()` | Cargar `footer.php` |
+| `get_sidebar()` | Cargar `sidebar.php` |
+| `wp_head()` | Obligatorio antes de `</head>` |
+| `wp_footer()` | Obligatorio antes de `</body>` |
 
-- Para recuperar la ruta hacia cualquier carpeta.
+---
 
-  <?php bloginfo('template_url');?>
-  Esto devuelve la ruta hacia un recurso que se aloja en una carpeta
-  
-  #Ejemplos:
-  <img src="<?php bloginfo('template_url');?>/img/logo.png" alt="Logo">
-  http://localhost/wp_inicio/content/themes/themes_01/img/logo.png
-  
-  <script src="<?php bloginfo('template_url');?>/js/jquery.js"></script>
-  http://localhost/wp_inicio/content/themes/themes_query_01/js/jquery.js
+## 🔹 Publicaciones
 
-~~~
+| Función | Descripción |
+|---------|-------------|
+| `the_title()` | Título de la publicación |
+| `the_permalink()` | Enlace permanente al post |
+| `the_content()` | Contenido completo |
+| `the_excerpt()` | Extracto automático o manual |
+| `the_time('d M Y')` | Fecha (ej: 01 Sep 2025) |
+| `the_author()` | Autor del post |
+| `the_category(', ')` | Categorías asignadas |
+| `the_tags()` | Etiquetas asignadas |
+
+---
+
+## 🔹 Loop básico
+
+```php
+
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+  <h2><?php the_title(); ?></h2>
+  <?php the_content(); ?>
+<?php endwhile; else: ?>
+  <p>No se encontraron publicaciones.</p>
+<?php endif; ?>
+
+```
+## 🔹 Imágenes destacadas
+
+| Función                           | Descripción      |
+| --------------------------------- | ---------------- |
+| `the_post_thumbnail()`            | Imagen destacada |
+| `the_post_thumbnail('thumbnail')` | Tamaño miniatura |
+| `the_post_thumbnail('medium')`    | Tamaño mediano   |
+| `the_post_thumbnail('large')`     | Tamaño grande    |
+
+## 🔹 Menús y navegación
+
+| Función         | Descripción             |
+| --------------- | ----------------------- |
+| `wp_nav_menu()` | Mostrar menú registrado |
+
+
+
+En functions.php:
+
+```php
+
+	register_nav_menus(array(
+	'primary' => __('Menú Principal', 'mi-tema'),
+	));
+
+```
+
+### 🔹 Scripts y estilos
+
+```php
+	function mi_tema_scripts() {
+		wp_enqueue_style('style', get_stylesheet_uri());
+		wp_enqueue_script('main', get_template_directory_uri() . '/js/main.js', array('jquery'), 1.0, true);
+	}
+	add_action('wp_enqueue_scripts', 'mi_tema_scripts');
+
+```
+
+### 🔹 Condicionales
+
+| Función           | Descripción                       |
+| ----------------- | --------------------------------- |
+| `is_home()`       | Página de inicio                  |
+| `is_front_page()` | Portada definida                  |
+| `is_single()`     | Post individual                   |
+| `is_page()`       | Página estática                   |
+| `is_category()`   | Categoría                         |
+| `is_tag()`        | Etiqueta                          |
+| `is_archive()`    | Archivo (categoría, autor, fecha) |
+| `is_search()`     | Resultados de búsqueda            |
+| `is_404()`        | Página de error 404               |
+
+
 
 
 ## CREAR UN POST_TYPE
@@ -426,7 +507,7 @@ El objetivo es que, al finalizar, seas capaz de **instalar, personalizar y admin
 add_action( 'init', 'codex_book_init' );
 
 function codex_book_init() {
-	
+
     $labels = array(
         'name'               => _x( 'Books', 'post type general name', 'your-plugin-textdomain' ),
         'singular_name'      => _x( 'Book', 'post type singular name', 'your-plugin-textdomain' ),
