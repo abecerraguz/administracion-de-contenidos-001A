@@ -70,6 +70,9 @@ Material complementario Intro a PHP, taxonomía y funciones más usadas en wordp
 
 2. [Archivos de themes de inicio versión actualizada my_theme_v_2, va base de datos en carpeta SQL, acceso al admin en readme.md](https://drive.google.com/file/d/12S_v1f4EF3cJTAUtCmhVXAeZQ-jPcKyh/view?usp=sharing)
 
+---
+## Tema base Blog Actualidad
+
 # SEMANA 5
 http://alebecerrag.laboratoriodiseno.cl/cpanel
 
