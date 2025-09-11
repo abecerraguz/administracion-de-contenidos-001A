@@ -35,7 +35,9 @@ El objetivo es que, al finalizar, seas capaz de **instalar, personalizar y admin
 - [06 - Get Template Parts: Cómo obtener los Posts](https://drive.google.com/file/d/14xF0tkhZ-0Q9Iuyj7jvnFPrmzsf_Pw6S/view?usp=sharing)
 - [07 - Creando el Nav](https://drive.google.com/file/d/1S8uLjnCNhtDIDddAj4-G4D-qrFXrHyYZ/view?usp=sharing)
 - [08 - Creando Header, Footer y Single Page](https://drive.google.com/file/d/1ydmE2Rs2BOEwFG19M7GyObbuDY6BYCII/view?usp=sharing)
-
+- [09 - Creando el sidebar y realizar una consulta parametrizada](https://drive.google.com/file/d/1UClcUbFNgthjIgUxG6n1X_vzxZmfNKTW/view?usp=sharing)
+- [10 - Dejando dinámico el card del sidebar](https://drive.google.com/file/d/1pXPJcBjG0V3-UFYix7xqHuAxObEGoFMr/view?usp=sharing)
+- [11 - Creación del archivo archive.php y taxonomias](https://drive.google.com/file/d/1V6KzkU30-EZKW9NCsskiWgKYSNkIajyq/view?usp=sharing)
 ---
 
 ### Para crear un Theme desde cero, se necesita como minimo:
