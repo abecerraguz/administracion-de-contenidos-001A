@@ -38,6 +38,7 @@ El objetivo es que, al finalizar, seas capaz de **instalar, personalizar y admin
 - [09 - Creando el sidebar y realizar una consulta parametrizada](https://drive.google.com/file/d/1UClcUbFNgthjIgUxG6n1X_vzxZmfNKTW/view?usp=sharing)
 - [10 - Dejando dinámico el card del sidebar](https://drive.google.com/file/d/1pXPJcBjG0V3-UFYix7xqHuAxObEGoFMr/view?usp=sharing)
 - [11 - Creación del archivo archive.php y taxonomias](https://drive.google.com/file/d/1V6KzkU30-EZKW9NCsskiWgKYSNkIajyq/view?usp=sharing)
+- [12 - Publicacion de wordpress desde el localhost al cpanel](https://drive.google.com/file/d/1Eb8IBcM-797dPA45J8Woi3uV4sa2KWiW/view?usp=sharing)
 ---
 
 ### Para crear un Theme desde cero, se necesita como minimo:
