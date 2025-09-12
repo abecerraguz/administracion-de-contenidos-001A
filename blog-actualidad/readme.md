@@ -39,6 +39,9 @@ El objetivo es que, al finalizar, seas capaz de **instalar, personalizar y admin
 - [10 - Dejando dinámico el card del sidebar](https://drive.google.com/file/d/1pXPJcBjG0V3-UFYix7xqHuAxObEGoFMr/view?usp=sharing)
 - [11 - Creación del archivo archive.php y taxonomias](https://drive.google.com/file/d/1V6KzkU30-EZKW9NCsskiWgKYSNkIajyq/view?usp=sharing)
 - [12 - Publicacion de wordpress desde el localhost al cpanel](https://drive.google.com/file/d/1Eb8IBcM-797dPA45J8Woi3uV4sa2KWiW/view?usp=sharing)
+- [13 - Mejora en la adminitración de funciones en el archivo functions.php](https://drive.google.com/file/d/11cxc4gzSFsdHBwUMc9yZKkJxtLridMuS/view?usp=sharing)
+- [14 - Creación de postype he incorporación en el archivo functions.php](https://drive.google.com/file/d/1hOGvBZGkVJHTMoY-QAfA20lrdEt94Nd5/view?usp=sharing)
+- [15 - Creación del Postype Slider y dejar dinamico desde el post slider](https://drive.google.com/file/d/1-02u4F-K9tJoisCw98Je-9NYLybu7wIu/view?usp=sharing)
 ---
 
 ### Para crear un Theme desde cero, se necesita como minimo:
