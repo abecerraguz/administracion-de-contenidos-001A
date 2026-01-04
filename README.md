@@ -26,15 +26,17 @@ Programando un sitio web para un CMS
 
 | Semana | Actividad | Tipo | Ponderación | Fecha de inicio | Fecha de termino |
 |--------|-----------|----------|----------|----------|----------|
-| 5   | Formativa 4: Personalizando contenidos con Custom Post Types y Loops | Individual | 0% | Martes, 03 de Febrero de 2026 | Lunes, 09 de Febrero de 2026 |
-| 6   | Formativa 5: Utilizando ACF y plantillas de página | Individual | 0% | Martes 23 de septiembre | Lunes 29 de septiembre |
-| 7   | Sumativa 3: Diseñando un sitio web consistente y funcional | Individual | 👉 35% | Martes 30 de septiembre | Lunes 06 de octubre |
+| 5   | Formativa 3: Personalizando contenidos con Custom Post Types y Loops | Individual | 0% | Martes, 03 de Febrero de 2026 | Lunes, 09 de Febrero de 2026 |
+| 6   | Formativa 4: Utilizando ACF y plantillas de página | Individual | 0% | Martes, 10 de Febrero de 2026 | Lunes, 16 de Febrero de 2026 |
+| 7   | Sumativa 3: Diseñando un sitio web consistente y funcional | Individual | 👉 35% | Martes, 17 de Febrero de 2026 | Lunes, 23 de Febrero de 2026 |
 
 
 ## Evaluación Final Transversal
 | Semana | Actividad | Tipo | Ponderación | Fecha de inicio | Fecha de termino |
 |--------|-----------|----------|----------|----------|----------|
-| 8   | Sumativa | Individual | 👉 40% | Jueves 02 de octubre | Domingo 12 de octubre |
+| 8   | Sumativa | Individual | 👉 40% | Martes, 24 de Febrero de 2026 | Domingo 01, de Marzo de 2026 |
+
+* Importante apertura temprana del EFT será el día jueves 19 de febrero semana 7, y la entrega es el domingo 01 de marzo hasta las 23:59 hrs
 
 # SEMANA 1
 Creación de Blog en [https://wordpress.com/](https://wordpress.com/)
