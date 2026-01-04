@@ -9,17 +9,16 @@ Estructurando un sitio web para un CMS
 
 | Semana | Actividad | Tipo | Ponderación | Fecha de inicio | Fecha de termino |
 |--------|-----------|----------|----------|----------|----------|
-| 1      | Formativa 1 : Creando un blog en WordpPress | Individual | 0% | Martes 12 de agosto | Lunes 18 de agosto |
-| 2      | Sumativa 1: Integrando WordPress y Bootstrap al proyecto | Individual | 👉 30% | Martes 19 de agosto | Lunes 25 de agosto |
+| 1      | Formativa 1 : Creando un blog en WordpPress | Individual | 0% | Martes, 06 de Enero de 2026 | Lunes, 12 de Enero de 2026 |
+| 2      | Sumativa 1: Integrando WordPress y Bootstrap al proyecto | Individual | 👉 30% | Martes, 13 de Enero de 2026 | Lunes, 19 de Enero de 2026 |
 
 ## Experiencia 2
 Creando el sitio web para un CMS
 
 | Semana | Actividad | Tipo | Ponderación | Fecha de inicio | Fecha de termino |
 |--------|-----------|----------|----------|----------|----------|
-| 3     | Formativa 2: Administrando las entradas del blog | Individual | 0% | Martes 26 de agosto | Lunes 01 de septiembre |
-| 4     | Formativa 3: Creando un menú de navegación en WordPress | Individual | 0% | Martes 02 de septiembre | Lunes 08 de septiembre |
-| 5     | Sumativa 2: Trabajando con Cpanel | Individual | 👉 35% | Martes 09 de septiembre | Lunes 15 de septiembre |
+| 3     | Formativa 2: Administrando las entradas del blog | Individual | 0% | Lunes, 19 de Enero de 2026 | Lunes, 26 de Enero de 2026 |
+| 4     | Sumativa 2: Trabajando con Cpanel | Individual | 👉 35% | Martes, 27 de Enero de 2026 | Lunes, 02 de Febrero de 2026 |
 
 
 ## Experiencia 3
@@ -27,15 +26,15 @@ Programando un sitio web para un CMS
 
 | Semana | Actividad | Tipo | Ponderación | Fecha de inicio | Fecha de termino |
 |--------|-----------|----------|----------|----------|----------|
-| 6   | Formativa 4: Personalizando contenidos con Custom Post Types y Loops | Individual | 0% | Martes 16 de septiembre | Lunes 22 de septiembre |
-| 7   | Formativa 5: Utilizando ACF y plantillas de página | Individual | 0% | Martes 23 de septiembre | Lunes 29 de septiembre |
-| 8   | Sumativa 3: Diseñando un sitio web consistente y funcional | Individual | 👉 35% | Martes 30 de septiembre | Lunes 06 de octubre |
+| 5   | Formativa 4: Personalizando contenidos con Custom Post Types y Loops | Individual | 0% | Martes, 03 de Febrero de 2026 | Lunes, 09 de Febrero de 2026 |
+| 6   | Formativa 5: Utilizando ACF y plantillas de página | Individual | 0% | Martes 23 de septiembre | Lunes 29 de septiembre |
+| 7   | Sumativa 3: Diseñando un sitio web consistente y funcional | Individual | 👉 35% | Martes 30 de septiembre | Lunes 06 de octubre |
 
 
 ## Evaluación Final Transversal
 | Semana | Actividad | Tipo | Ponderación | Fecha de inicio | Fecha de termino |
 |--------|-----------|----------|----------|----------|----------|
-| 9    | Sumativa | Individual | 👉 40% | Jueves 02 de octubre | Domingo 12 de octubre |
+| 8   | Sumativa | Individual | 👉 40% | Jueves 02 de octubre | Domingo 12 de octubre |
 
 # SEMANA 1
 Creación de Blog en [https://wordpress.com/](https://wordpress.com/)
