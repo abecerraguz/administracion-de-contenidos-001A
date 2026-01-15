@@ -488,6 +488,21 @@ $x--	Post-decrementa
 
 ```bash
 
+	<?php if ( have_posts() ) : ?>
+
+	<?php while ( have_posts() ) : the_post(); ?>
+		<!-- ✅ AQUÍ VA TU HTML REPETIBLE (card / item) -->
+	<?php endwhile; ?>
+
+	<?php else : ?>
+	<!-- ❌ No hay publicaciones -->
+	<p>No hay publicaciones para mostrar.</p>
+	<?php endif; ?>
+
+```
+
+```bash
+
 <?php if ( have_posts() ) : ?>
   <?php
     /*
