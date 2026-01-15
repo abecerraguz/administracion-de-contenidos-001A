@@ -484,6 +484,156 @@ $x--	Post-decrementa
 
 ```
 
+## LOOP BASE DE WORDPRESS AMIGABLE CON HTML
+
+```bash
+
+<?php if ( have_posts() ) : ?>
+  <?php
+    /*
+      ✅ IF (CONDICIÓN)
+      - have_posts() pregunta: "¿Existe al menos una publicación para mostrar?"
+      - Si la respuesta es SÍ, entra al WHILE y recorre las publicaciones.
+      - Si la respuesta es NO, cae en el ELSE (mensaje "no hay publicaciones").
+    */
+  ?>
+
+  <?php while ( have_posts() ) : the_post(); ?>
+    <?php
+      /*
+        ✅ WHILE (RECORRIDO / LOOP)
+        - have_posts() va avanzando por el listado.
+        - the_post() "carga" la publicación actual en memoria (el post actual del loop).
+        - Desde aquí, todas las funciones the_* / get_the_* saben "cuál post" usar.
+      */
+    ?>
+
+    <!-- =========================
+         ✅ CARD / ITEM REPETIBLE
+         (Aquí escribimos HTML normal y "inyectamos" datos de WordPress con PHP)
+    ========================== -->
+    <div class="col-12 col-sm-4">
+      <article class="card my-3">
+
+        <!-- 1) LINK DEL POST (PERMALINK) -->
+        <!-- the_permalink() imprime la URL del post actual -->
+        <div class="card__icon">
+          <a
+            href="<?php the_permalink(); ?>"
+            title="<?php the_title_attribute(); ?>"
+          >
+            <?php
+              /*
+                ✅ IMAGEN DESTACADA (THUMBNAIL)
+                - has_post_thumbnail() verifica si el post tiene imagen destacada.
+                - the_post_thumbnail() la imprime en HTML <img ...>.
+                - Si NO tiene, usamos un "fallback" (imagen/ícono por defecto del theme).
+              */
+            ?>
+
+            <?php if ( has_post_thumbnail() ) : ?>
+
+              <?php the_post_thumbnail('thumbnail', [
+                /*
+                  'thumbnail' = tamaño WP (puede ser 'medium', 'large', etc.)
+                  class       = clase CSS (aquí usamos Bootstrap: img-fluid)
+                  loading     = lazy para performance
+                  alt         = texto alternativo accesible (usamos el título del post)
+                */
+                'class'   => 'img-fluid',
+                'loading' => 'lazy',
+                'alt'     => esc_attr( get_the_title() ),
+              ]); ?>
+
+            <?php else : ?>
+
+              <!-- ✅ Fallback cuando NO hay imagen destacada -->
+              <img
+                src="<?php echo esc_url( get_template_directory_uri() . '/assets/img/code-branch.svg' ); ?>"
+                alt="Icono por defecto"
+                loading="eager"
+              />
+
+            <?php endif; ?>
+          </a>
+        </div>
+
+        <!-- 2) TÍTULO (the_title) -->
+        <!-- the_title() imprime el título visible -->
+        <h3 class="card__title">
+          <a href="<?php the_permalink(); ?>">
+            <?php the_title(); ?>
+          </a>
+        </h3>
+
+        <!-- 3) EXTRACTO / RESUMEN -->
+        <!-- get_the_excerpt() obtiene el extracto, wp_trim_words lo recorta -->
+        <p>
+          <?php echo esc_html( wp_trim_words( get_the_excerpt(), 18, '...' ) ); ?>
+        </p>
+
+        <?php
+          /*
+            ✅ DATOS EXTRA ÚTILES (opcionales, pero muy usados en cards)
+            - Fecha: get_the_date()
+            - Autor: get_the_author()
+            - Categorías: get_the_category_list()
+            (En Page normalmente no hay categorías, en Post sí)
+          */
+        ?>
+        <p class="mb-2" style="opacity:.8;">
+          <small>
+            📅 <?php echo esc_html( get_the_date() ); ?>
+            · ✍️ <?php echo esc_html( get_the_author() ); ?>
+          </small>
+        </p>
+
+        <?php
+          /*
+            ✅ Categorías (solo si existen)
+            - get_the_category_list() devuelve un string con links <a> ya armados.
+            - IMPORTANTE: como devuelve HTML, no usamos esc_html (lo rompería).
+          */
+        ?>
+        <?php $cats = get_the_category_list(', '); ?>
+        <?php if ( $cats ) : ?>
+          <p class="mb-3" style="opacity:.9;">
+            <small><strong>Categorías:</strong> <?php echo $cats; ?></small>
+          </p>
+        <?php endif; ?>
+
+        <!-- 4) BOTÓN "SABER MÁS" -->
+        <a
+          href="<?php the_permalink(); ?>"
+          class="button"
+          title="<?php the_title_attribute(); ?>"
+        >
+          Saber más
+        </a>
+
+      </article>
+    </div>
+    <!-- =========================
+         /CARD
+    ========================== -->
+
+  <?php endwhile; ?>
+
+<?php else : ?>
+
+  <!-- ❌ ELSE: No hay publicaciones -->
+  <div class="col-12">
+    <h3>Lo sentimos, no existe publicación</h3>
+  </div>
+
+<?php endif; ?>
+
+
+
+
+
+```
+
 ## POST_TYPE DE WORDPRESS CONDICIONADO A UNA CATEGORÍA
 ```php
 
