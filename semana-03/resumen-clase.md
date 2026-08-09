@@ -1,5 +1,5 @@
-# Semana 03 - Personalizando un Sitio Web en WordPress
 
+![Infografía](material-clase/infografia.png)# Semana 03 - Personalizando un Sitio Web en WordPress
 **Experiencia:** 2 | **Asignatura:** Administración de Contenidos
 
 ---
@@ -8,6 +8,7 @@
 
 Esta semana se trabaja con los archivos propios de las publicaciones tipo post (blog). Se aprende a crear el primer sitio tipo blog con WordPress, personalizando `index.php` y `single.php` para controlar la estructura de listado y detalle de entradas.
 
+[Descargar presentación](material-clase/presentacion.pdf)
 ---
 
 ## Temas Tratados

@@ -1,3 +1,4 @@
+![Infografía](material-clase/infografia.png)
 # Semana 01 - Conociendo el Administrador de Contenidos
 
 **Experiencia:** 1 | **Asignatura:** Administración de Contenidos
@@ -8,6 +9,7 @@
 
 WordPress es un Sistema de Gestión de Contenidos (CMS) que permite crear, gestionar y publicar contenido en línea de manera eficiente. Originalmente diseñado para blogs, hoy impulsa más del 41% de los sitios web en internet. En esta semana se distingue entre wordpress.com y wordpress.org y se da el primer acercamiento a la plataforma.
 
+[Descargar presentación](material-clase/presentacion.pdf)
 ---
 
 ## Temas Tratados

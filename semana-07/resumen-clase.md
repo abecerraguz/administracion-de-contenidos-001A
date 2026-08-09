@@ -1,3 +1,4 @@
+![Infografía](material-clase/infografia.png)
 # Semana 07 - Creando Plantillas Avanzadas con Advanced Custom Fields (ACF)
 
 **Experiencia:** 3 | **Asignatura:** Administración de Contenidos
@@ -8,6 +9,7 @@
 
 Esta semana se da un paso más en el desarrollo avanzado de plantillas WordPress. Se comprende qué es un metabox, se instala y configura el plugin Advanced Custom Fields (ACF) para gestionar campos personalizados, y se aprende a mostrar esa información en el frontend del sitio.
 
+[Descargar presentación](material-clase/presentacion.pdf)
 ---
 
 ## Temas Tratados

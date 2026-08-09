@@ -1,3 +1,4 @@
+![Infografía](material-clase/infografia.png)
 # Semana 06 - Creando Contenidos y Bucles Personalizados
 
 **Experiencia:** 3 | **Asignatura:** Administración de Contenidos
@@ -8,6 +9,7 @@
 
 Esta semana se ingresa al mundo avanzado de WordPress: Custom Post Types (CPT) y Custom Loops. Los CPT permiten crear tipos de contenido más allá de las entradas y páginas estándar, mientras que los Custom Loops permiten mostrar ese contenido de formas únicas y adaptadas. También se revisan medidas de mantenimiento y seguridad del sitio.
 
+[Descargar presentación](material-clase/presentacion.pdf)
 ---
 
 ## Temas Tratados

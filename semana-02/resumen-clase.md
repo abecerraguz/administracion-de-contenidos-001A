@@ -1,3 +1,5 @@
+
+![Infografía](material-clase/infografia.png)
 # Semana 02 - Creando mi Primera Plantilla
 
 **Experiencia:** 1 | **Asignatura:** Administración de Contenidos
@@ -8,6 +10,7 @@
 
 Esta semana se da el salto a wordpress.org, explorando cómo crear un sitio web con control total: desde la instalación de WordPress en servidor local hasta la creación de temas personalizados con PHP. El objetivo es construir una presencia en línea con identidad propia y funcionalidad a medida.
 
+[Descargar presentación](material-clase/presentacion.pdf)
 ---
 
 ## Temas Tratados

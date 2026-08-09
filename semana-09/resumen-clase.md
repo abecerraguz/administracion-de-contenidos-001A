@@ -1,3 +1,4 @@
+![Infografía](material-clase/infografia.png)
 # Semana 09 - Evaluación Final Transversal
 
 **Asignatura:** Administración de Contenidos
@@ -8,6 +9,7 @@
 
 La semana 9 corresponde a la **Evaluación Final Transversal** de la asignatura. Esta evaluación se trabaja de manera paralela a las actividades de la Experiencia 3 (desde la semana 6). Consiste en el desarrollo de un sitio web completo con diseño personalizado utilizando WordPress instalado en un servidor web.
 
+[Descargar presentación](material-clase/presentacion.pdf)
 ---
 
 ## Requisitos del Proyecto Final

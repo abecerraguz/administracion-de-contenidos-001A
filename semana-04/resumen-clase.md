@@ -1,3 +1,4 @@
+![Infografía](material-clase/infografia.png)
 # Semana 04 - Comprendiendo Nuevos Archivos de WordPress
 
 **Experiencia:** 2 | **Asignatura:** Administración de Contenidos
@@ -8,6 +9,7 @@
 
 Esta semana se trabaja con las páginas de archivo (`archive.php`) y los menús de WordPress. Se aprende a agrupar y mostrar entradas por categoría, y a registrar y personalizar menús de navegación desde el panel de administración y mediante código PHP.
 
+[Descargar presentación](material-clase/presentacion.pdf)
 ---
 
 ## Temas Tratados

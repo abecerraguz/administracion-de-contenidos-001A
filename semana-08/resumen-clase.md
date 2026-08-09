@@ -1,3 +1,4 @@
+![Infografía](material-clase/infografia.png)
 # Semana 08 - Personalizando Taxonomías y Bucles en WordPress
 
 **Experiencia:** 3 | **Asignatura:** Administración de Contenidos
@@ -8,6 +9,7 @@
 
 Última semana de la asignatura. Se aprende a personalizar taxonomías en WordPress (categorías y etiquetas propias para CPTs) y a crear bucles que las recorran. El objetivo final es integrar todos los contenidos aprendidos en un proyecto web consistente y funcional.
 
+[Descargar presentación](material-clase/presentacion.pdf)
 ---
 
 ## Temas Tratados

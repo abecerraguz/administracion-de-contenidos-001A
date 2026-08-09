@@ -1,3 +1,4 @@
+![Infografía](material-clase/infografia.png)
 # Semana 05 - Instalando WordPress en cPanel
 
 **Experiencia:** 2 | **Asignatura:** Administración de Contenidos
@@ -8,6 +9,7 @@
 
 Esta semana se aprende a subir el sitio WordPress a un servidor real utilizando cPanel. El proceso abarca desde la creación de la base de datos MySQL hasta la configuración del archivo `wp-config.php`, permitiendo gestionar el sitio web de manera autónoma en un hosting profesional.
 
+[Descargar presentación](material-clase/presentacion.pdf)
 ---
 
 ## Temas Tratados
