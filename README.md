@@ -9,16 +9,16 @@ Estructurando un sitio web para un CMS
 
 | Semana | Actividad | Tipo | Ponderación | Fecha de inicio | Fecha de termino |
 |--------|-----------|----------|----------|----------|----------|
-| 1      | Formativa 1 : Creando un blog en WordpPress | Individual | 0% | Martes, 06 de Enero de 2026 | Lunes, 12 de Enero de 2026 |
-| 2      | Sumativa 1: Integrando WordPress y Bootstrap al proyecto | Individual | 👉 30% | Martes, 13 de Enero de 2026 | Lunes, 19 de Enero de 2026 |
+| 1      | Formativa 1 : Creando un blog en WordpPress | Individual | 0% | Martes, 11 de agosto de 2026 | Lunes, 17 de agosto de 2026 |
+| 2      | Sumativa 1: Integrando WordPress y Bootstrap al proyecto | Individual | 👉 30% | Martes, 18 de agosto de 2026 | Lunes, 24 de agosto de 2026 |
 
 ## Experiencia 2
 Creando el sitio web para un CMS
 
 | Semana | Actividad | Tipo | Ponderación | Fecha de inicio | Fecha de termino |
 |--------|-----------|----------|----------|----------|----------|
-| 3     | Formativa 2: Administrando las entradas del blog | Individual | 0% | Lunes, 19 de Enero de 2026 | Lunes, 26 de Enero de 2026 |
-| 4     | Sumativa 2: Trabajando con Cpanel | Individual | 👉 35% | Martes, 27 de Enero de 2026 | Lunes, 02 de Febrero de 2026 |
+| 3     | Formativa 2: Administrando las entradas del blog | Individual | 0% | Martes, 25 de agosto de 2026 | Lunes, 31 de agosto de 2026 |
+| 4     | Sumativa 2: Trabajando con Cpanel | Individual | 👉 35% | Martes, 01 de septiembre de 2026 | Lunes, 07 de septiembre de 2026 |
 
 
 ## Experiencia 3
@@ -26,17 +26,17 @@ Programando un sitio web para un CMS
 
 | Semana | Actividad | Tipo | Ponderación | Fecha de inicio | Fecha de termino |
 |--------|-----------|----------|----------|----------|----------|
-| 5   | Formativa 3: Personalizando contenidos con Custom Post Types y Loops | Individual | 0% | Martes, 03 de Febrero de 2026 | Lunes, 09 de Febrero de 2026 |
-| 6   | Formativa 4: Utilizando ACF y plantillas de página | Individual | 0% | Martes, 10 de Febrero de 2026 | Lunes, 16 de Febrero de 2026 |
-| 7   | Sumativa 3: Diseñando un sitio web consistente y funcional | Individual | 👉 35% | Martes, 17 de Febrero de 2026 | Lunes, 23 de Febrero de 2026 |
+| 5   | Formativa 3: Personalizando contenidos con Custom Post Types y Loops | Individual | 0% | Martes, 08 de septiembre de 2026 | Lunes, 14 de septiembre de 2026 |
+| 6   | Formativa 4: Utilizando ACF y plantillas de página | Individual | 0% | Martes, 15 de septiembre de 2026 | Lunes, 21 de septiembre de 2026 |
+| 7   | Sumativa 3: Diseñando un sitio web consistente y funcional | Individual | 👉 35% | Martes, 22 de septiembre de 2026 | Lunes, 28 de septiembre de 2026 |
 
 
 ## Evaluación Final Transversal
 | Semana | Actividad | Tipo | Ponderación | Fecha de inicio | Fecha de termino |
 |--------|-----------|----------|----------|----------|----------|
-| 8   | Sumativa | Individual | 👉 40% | Martes, 24 de Febrero de 2026 | Domingo 01, de Marzo de 2026 |
+| 8   | Sumativa | Individual | 👉 40% | Martes, 29 de septiembre de 2026 | Domingo 04, de octubre de 2026 |
 
-* Importante apertura temprana del EFT será el día jueves 19 de febrero semana 7, y la entrega es el domingo 01 de marzo hasta las 23:59 hrs
+* Importante apertura temprana del EFT será el día jueves 24 de septiembre semana 7, y la entrega es el domingo 04 de octubre hasta las 23:59 hrs
 
 ---
 
